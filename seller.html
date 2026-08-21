@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become a Seller | Flipkart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .seller-hero { padding: 40px 0; text-align: center; }
+      .seller-hero h1 { font-size: 2rem; margin-bottom: 8px; }
+      .seller-hero p { color: #555; margin-bottom: 18px; }
+      .actions { display:flex; gap:12px; justify-content:center; }
+      .actions a { background: var(--fk-blue); color:#fff; padding:10px 14px; border-radius:8px; font-weight:700; text-decoration:none; }
+      .container { width: min(1100px, calc(100% - 34px)); margin: 0 auto; }
+    </style>
+  </head>
+  <body>
+    <header class="page-header" style="position:static;">
+      <div class="top-strip">
+        <div class="container nav-wrap" style="padding:12px 0; display:flex; align-items:center; justify-content:space-between;">
+          <div class="brand-logo-wrap">
+            <span class="brand-logo">Flipkart</span>
+            <span class="explore-plus">Explore <span>Plus</span></span>
+          </div>
+          <a href="index.html" style="color:#fff; text-decoration:none; background:var(--fk-blue); padding:8px 12px; border-radius:4px;">Back to Home</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="seller-hero">
+        <h1>Sell on Flipkart</h1>
+        <p>Reach millions of customers. Create your seller account and start listing products.</p>
+        <div class="actions">
+          <a href="#register">Register Now</a>
+          <a href="#learn">Learn More</a>
+        </div>
+      </section>
+
+      <section style="background:#fff;padding:18px;border-radius:10px;box-shadow:var(--shadow);">
+        <h2>How it works</h2>
+        <ul style="margin-top:12px;color:#444;">
+          <li>Sign up as a seller</li>
+          <li>List your products</li>
+          <li>Manage orders and shipping</li>
+          <li>Grow with analytics</li>
+        </ul>
+      </section>
+
+      <section style="margin-top:18px;background:#fff;padding:18px;border-radius:10px;box-shadow:var(--shadow);" id="sellerSignup">
+        <h2>Seller Sign Up</h2>
+        <form id="sellerForm" style="margin-top:12px;display:grid;gap:10px;grid-template-columns:1fr;">
+          <input id="sellerName" name="name" placeholder="Your full name" required style="padding:10px;border:1px solid #ddd;border-radius:6px;" />
+          <input id="businessName" name="business" placeholder="Business / Shop name" required style="padding:10px;border:1px solid #ddd;border-radius:6px;" />
+          <input id="sellerEmail" name="email" type="email" placeholder="Email address" required style="padding:10px;border:1px solid #ddd;border-radius:6px;" />
+          <input id="sellerPhone" name="phone" type="tel" placeholder="Phone number" required style="padding:10px;border:1px solid #ddd;border-radius:6px;" />
+          <select id="sellerCategory" name="category" style="padding:10px;border:1px solid #ddd;border-radius:6px;">
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home">Home</option>
+            <option value="grocery">Grocery</option>
+          </select>
+          <div style="display:flex;gap:8px;">
+            <button id="sellerSubmit" type="submit" style="background:var(--fk-blue);color:#fff;border:none;padding:10px 14px;border-radius:6px;">Submit Application</button>
+            <button id="sellerReset" type="button" style="background:#f1f3f6;border:1px solid #ddd;padding:10px 14px;border-radius:6px;">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
